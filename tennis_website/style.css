@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(202, 206, 221, 0.699),rgba(198, 202, 218, 0.7)), url(images/Tennis_Racket_and_Balls.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 1% 5% 1%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(189, 196, 207, 0.795);
+}
+
+nav img{
+    width: 60px;
+    height: 50px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: left;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color:rgb(18, 18, 124);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: bold; */
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(255, 253, 113);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.submenu {
+    display: flex;
+	flex-direction: column;
+	visibility: hidden;
+	position: absolute;
+	top: 100%;
+    background: rgba(189, 196, 207, 0.795);
+    transition: .6s linear;
+}
+
+
+/* отображаем выпадающий список при наведении */
+.nav-links > ul li:hover .submenu{
+    display:block;
+    visibility: visible;
+}
+
+/* первый уровень выпадающего списка
+.submenu a {
+    min-width:170px;
+    float:none;
+    display:list-item;
+    position: relative;
+} */
+
+
+.text-box{
+    width: 90%;
+    color:rgb(20, 20, 77);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-box h1{
+    font-size: 62px;
+    color:rgb(20, 20, 77);
+}
+
+.text-box p{
+    color:rgb(20, 20, 77);
+    margin: 10px 0 40px;
+    font-size: 18px;
+}
+
+.hero-btn{
+    background: transparent;
+    border: 2.5px solid rgb(9, 9, 59);
+    color: rgb(20, 20, 77);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+}
+
+.hero-btn:hover{
+    /* border: 1px solid rgb(233, 248, 95); */
+    border: 2.5px solid rgb(255, 253, 113);
+
+    background: transparent;
+    transition: 0.5s;
+}
+
+
+/* ------- History -------- */
+
+.history{
+    width: 80%;
+    text-align: center;
+    margin: 13% 10%;
+
+}
+
+.history h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color:rgb(20, 20, 77);
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(20, 20, 77);
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 30px 10px 10px;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+
+/* -------victories------- */
+
+.row{
+    margin: 5% 10%;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.victories{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background: rgb(124, 172, 211);
+    background-size: cover;
+}
+
+.victories-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.victories-col img{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color:rgb(255, 255, 255);
+}
+
+.victories-col h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+
+.victories-col h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+
+/*-------footer-------*/
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p{
+    font-size: 15px;
+    /* margin-bottom: 25px; */
+    color:rgb(124, 172, 211);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.icons{
+    margin-top: 2%;
+    align-items: center;
+    color: rgb(124, 172, 211);
+}
